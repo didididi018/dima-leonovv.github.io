@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чайхоная (чайная радость)</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+        body{background:#20B2AA;color:#333;line-height:1.6}
+        .header{display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem;background:#7CFC00}
+        .header h1{font-size:1.8rem}
+        .header nav a{margin-left:1.5rem;color:#fff;text-decoration:none;font-weight:bold}
+        .hero{text-align:center;padding:4rem 2rem;background:#666 url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEBAQEBUVFRURFxAXFxIVFRUWFRUWFxYXGBkYHSghGBolHRUYITEiJiorLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGzUlICYvLS8tLjctLS0rLSstLSsvMCsvMCsvLywsMCwsLywsMCwsLywsMCwsLywsMCwsLywsMCwsLP/AABEIAMUA/wMBIgACEQEDEQH/xAAcAAEAAgIDAQEAAAAAAAAAAAAAAQUGBwgDAgH/xABEEAACAQIEAwUEBgkDBAMAAAABAhEDIQAEEjETIkFRBhMyYXGRoRQVIzNCUrHBcoKSwdEWIzNDUlNUYmNzgpPhFiVDwv/EABoBAQEBAQEBAQEAAAAAAAAAAAAAAAECAwQFBv/EACURAQACAgICAwADAQAAAAAAAAABAhEhMQMSMkFRBBQiYXGhFP/aAAwDAQACEQMRAD8A9xgICAgICAgICAgICAgcFwy4ftgMTxJo8YCocEdA3WN2GsCi+eE/VT+X75IfPCfqp/L98B88J+qn8v3wOm4C8Nm2i") center/cover no-repeat}
+        .hero h2{font-size:2.5rem;margin-bottom:1rem}
+        .hero p{font-size:1.2rem;margin-bottom:1.5rem}
+        .btn{display:inline-block;padding:0.7rem 1.5rem;background:#ff4757;color:#fff;text-decoration:none;border-radius:5px;font-weight:bold}
+        .pc,.services,.tournaments,.visit{padding:2rem}
+        .pc h2,.services h2,.tournaments h2,.visit h2{margin-bottom:1.5rem}
+        .pc-grid,.services-grid,.tournaments-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem}
+        .pc-card,.service-card,.tournament-card{background:#222;border-radius:8px;overflow:hidden}
+        .pc-card img,.service-card img,.tournament-card img{width:100%;height:auto;display:block}
+        .pc-card h3,.service-card h3,.tournament-card h3{margin:0.75rem 1rem 0.5rem}
+        .pc-card p,.service-card p{margin:0 1rem 0.75rem;color:#ccc}
+        .contact-form{max-width:400px;margin:0 auto;display:grid;gap:1rem}
+        .contact-form input,select{border:none;border-radius:5px;padding:0.75rem;background:#333;color:#fff}
+        .contact-form button{width:100%;padding:0.75rem;background:#ff4757;color:#fff;border:none;border-radius:5px;font-weight:bold}
+        .footer{text-align:center;padding:1rem 2rem;background:#222;color:#888}
+    </style>
+</head>
+<body>
+  <header class="header">
+        <h1>Чайхона «Чайная радость»</h1>
+        <nav>
+            <a href="#menu">Чайное меню</a>
+            <a href="#reviews">Услуги</a>
+            <a href="#about">О нас</a>
+            <a href="#visit">Забронировать столик</a>
+        </nav>
+    </header>
+ <section id="hero" class="hero">
+        <h2>Заглядывай к нам</h2>
+        <p>В чайхану скорей заходи,
+Отдых, радость здесь найди!
+Чай душистый, аромат еды,
+Душевные беседы — вот мечты.
+
+Кальян дымится, свет горит,
+Сердце радостью заговорит.
+Восток встречает теплотой,
+Здесь найдёшь ты дом родной!</p>
+        <a href="#contacts" class="btn">Свзязь с нами</a>
+    </section>
+    <section id="hero">
+        <h1>Добро пожаловать в Чайхану «Чайная радость»!</h1>
+        <p>Свежежие листья чая, спокойная атмосфера и дружелюбный.</p>
+        <button onclick="location.href='#menu'">Взгляни на меню</button>
+    </section>
+
+    <section id="about">
+        <h2>О Чайхоне </h2>
+        <p>Чайхана — это не просто заведение, где подают чай, а особый культурный уголок, пропитанный восточным колоритом и гостеприимством. Здесь время будто замедляет ход: под мягкий аромат свежезаваренного чая можно насладиться традиционными блюдами — пловом, шашлыками, лепёшками и сладостями.
+
+Уютная атмосфера, низкие столики, мягкие подушки и ненавязчивая восточная музыка создают особое настроение. Чайхана издавна служила местом встреч: здесь вели беседы, заключали сделки, делились новостями и укрепляли дружеские связи.
+
+Сегодня чайхана сохраняет эти традиции, предлагая гостям возможность отдохнуть душой, погрузиться в атмосферу Востока и по-настоящему расслабиться за чашкой ароматного чая.
+
+</p>
+        <img src="https://yaart-web-alice-images.s3.yandex.net/editing_result_e3b3a4c439ab11f188c03e58e9dfdf7d:1" height="600" alt="Чайхона">
+    </section>
+
+    <section id="menu">
+        <h2>Меню</h2>
+        <div class="menu-items">
+            <div class="item">
+                 <h3>ассорти чаев</h3>
+                <img src="https://yaart-web-alice-images.s3.yandex.net/2bc05b8739a811f1b111b671dcfb3bd8:3" height="450" width="500" alt="Ассорти чаев">
+                <p>Крепкие насыщенные и спокойные для большей компании людей .</p>
+                <p>Цена: 2900 ₽</p>
+            </div>
+            <div class="item">
+                <h3>Холодный зеленый чай</h3>
+                <img src="https://yaart-web-alice-images.s3.yandex.net/2bc05b8739a811f1b111b671dcfb3bd8:4" height="450" width="500" alt="зеленый чай">
+                <p>Нежный зеленый чай его лучше всего пить в теплую или жаркую погоду.</p>
+                <p>Цена: 200 ₽</p>
+            </div>
+             <div class="item">
+                 <h3>ассорти чаев 2</h3>
+                <img src="https://yaart-web-alice-images.s3.yandex.net/2bc05b8739a811f1b111b671dcfb3bd8:2" height="450" width="500" alt="ассорти чаев 2">
+                <p>менее крепкие и более успокаивающие виды чаев.</p>
+                <p>Цена: 2199 ₽</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews">
+        <h2>Отзывы</h2>
+        <div class="reviews">
+            <div class="review">
+                <p>«Посетили вашу чайхону с друзьями — остались в полном восторге! Порадовало всё: и уютная атмосфера с восточными мотивами, и гостеприимство персонала. Особенно впечатлил выбор чая — попробовали ассорти чаев. Всё было невероятно вкусно и по адекватной цене. Обязательно вернёмся ещё — теперь это наше любимое место для встреч! Большое спасибо за тёплый приём!»</p>
+                <p>— Никита Воронов, 22 года</p>
+            </div>
+            <div class="review">
+                <p>«Решили с семьёй заглянуть в вашу чайхону на выходных — и не прогадали! Порадовало сразу несколько моментов:
+
+Атмосфера. Уютно, стильно, с восточными акцентами — приятно провести время.
+
+Еда. Взяли хумус, лепёшки и несколько восточных сладостей. Всё свежее и очень вкусное.
+
+Обслуживание. Персонал внимательный и ненавязчивый — всё объяснили, помогли с выбором.
+
+Отличное место для спокойного вечера или дружеской беседы. Уже планируем следующий визит!»</p>
+                <p>— Игнат Федотов, 45 лет</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts">
+        <h2>Контакты</h2>
+        <address>
+            <p>Адрес: г. Москва, ул. Неглинная, д. 12 к А</p>
+            <p>Телефон: +7 (700) 000-00-00</p>
+            <p>Email: hello@exa-tea.demo</p>
+        </address>
+    <section id="visit" class="visit">
+        <h2>Забронируй своё место</h2>
+        <form class="contact-form">
+            <input type="text" placeholder= Имя(Фамилия) required>
+            <input type="datetime-local" required>
+                     <select required>
+                <option value="" disabled selected>Выберите дату</option>
+                <option value="Апрель">24 Апреля|(4 столик)</option>
+                <option value="Апрель">24 Апреля|(3 столик)</option>
+                <option value="Апрель">24 Апреля|(7 столик)</option>
+                <option value="Апрель">24 Апреля|(6 столик)</option>
+                <option value="Апрель">25 Апреля|(3 столик)</option>
+                <option value="Апрель">25 Апреля|(4 столик)</option>
+                <option value="Апрель">26 Апреля|(3 столик)</option>
+                <option value="Апрель">27 Апреля|(7 столик)</option>
+                <option value="Апрель">27 Апреля|(6 столик)</option>
+                <option value="Апрель">27 Апреля|(3 столик)</option>
+            </select>
+            <button type="submit" class="btn">Забронировать столик</button>
+        </form>
+    </section>
+</main>
+</body>
+</html>
