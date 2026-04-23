@@ -1,30 +1,43 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="ru">
 <head>
-     <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Чайхоная (чайная радость)</title>
     <style>
-        *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
-        body{background:#D2B48C;color:##333;line-height:1.6}
-        .header{display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem;background:#7CFC00}
-        .header h1{font-size:1.8rem}
-        .header nav a{margin-left:1.5rem;color:#000;text-decoration:none;font-weight:bold}
-        .hero{text-align:center;padding:4rem 2rem;background:#666 url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEBAQEBUVFRURFxAXFxIVFRUWFRUWFxYXGBkYHSghGBolHRUYITEiJiorLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGzUlICYvLS8tLjctLS0rLSstLSsvMCsvMCsvLywsMCwsLywsMCwsLywsMCwsLywsMCwsLywsMCwsLP/AABEIAMUA/wMBIgACEQEDEQH/xAAcAAEAAgIDAQEAAAAAAAAAAAAAAQUGBwgDAgH/xABEEAACAQIEAwUEBgkDBAMAAAABAhEDIQAEEjETIkFRBhMyYXGRoRQVIzNCUrHBcoKSwdEWIzNDUlNUYmNzgpPhFiVDwv/EABoBAQEBAQEBAQEAAAAAAAAAAAAAAAECAwQFBv/EACURAQACAgICAwADAQAAAAAAAAABAhEhMQMSMkFRBBQiYXGhFP/aAAwDAQACEQMRAD8A9xgICAgICAgICAgICAgcFwy4ftgMTxJo8YCocEdA3WN2GsCi+eE/VT+X75IfPCfqp/L98B88J+qn8v3wOm4C8Nm2i") center/cover no-repeat}
-        .hero h2{font-size:2.5rem;margin-bottom:1rem}
-        .hero p{font-size:1.2rem;margin-bottom:1.5rem}
-        .btn{display:inline-block;padding:0.7rem 1.5rem;background:#9f12aa;color:#9b9a9a;text-decoration:none;border-radius:5px;font-weight:bold}
-        .pc,.services,.tournaments,.visit{padding:2rem}
-        .pc h2,.services h2,.tournaments h2,.visit h2{margin-bottom:1.5rem}
-        .pc-grid,.services-grid,.tournaments-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem}
-        .pc-card,.service-card,.tournament-card{background:#222;border-radius:8px;overflow:hidden}
-        .pc-card img,.service-card img,.tournament-card img{width:100%;height:auto;display:block}
-        .pc-card h3,.service-card h3,.tournament-card h3{margin:0.75rem 1rem 0.5rem}
-        .pc-card p,.service-card p{margin:0 1rem 0.75rem;color:#ccc}
-        .contact-form{max-width:400px;margin:0 auto;display:grid;gap:1rem}
-        .contact-form input,select{border:none;border-radius:5px;padding:0.75rem;background:#333;color:#fff}
-        .contact-form button{width:100%;padding:0.75rem;background:#b60472;color:#fff;border:none;border-radius:5px;font-weight:bold}
-        .footer{text-align:center;padding:1rem 2rem;background:#222;color:#888}
+        * {margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+        body {background:#D2B48C;color:#333;line-height:1.6}
+        .header {display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem;background:#7CFC00}
+        .header h1 {font-size:1.8rem}
+        .header nav a {margin-left:1.5rem;color:#000;text-decoration:none;font-weight:bold}
+        .hero {text-align:center;padding:4rem 2rem;background:#666 url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEBAQEBUVFRURFxAXFxIVFRUWFRUWFxYXGBkYHSghGBolHRUYITEiJiorLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGzUlICYvLS8tLjctLS0rLSstLSsvMCsvMCsvLywsMCwsLywsMCwsLywsMCwsLywsMCwsLywsMCwsLP/AABEIAMUA/wMBIgACEQEDEQH/xAAcAAEAAgIDAQEAAAAAAAAAAAAAAQUGBwgDAgH/xABEEAACAQIEAwUEBgkDBAMAAAABAhEDIQAEEjETIkFRBhMyYXGRoRQVIzNCUrHBcoKSwdEWIzNDUlNUYmNzgpPhFiVDwv/EABoBAQEBAQEBAQEAAAAAAAAAAAAAAAECAwQFBv/EACURAQACAgICAwADAQAAAAAAAAABAhEhMQMSMkFRBBQiYXGhFP/aAAwDAQACEQMRAD8A9xg AgcFwy4ftgMTxJo8YCocEdA3WN2GsCi+eE/VT+X75IfPCfqp/L98B88J+qn8v3wOm4C8Nm2i") center/cover no-repeat}
+        .hero h2 {font-size:2.5rem;margin-bottom:1rem}
+        .hero p {font-size:1.2rem;margin-bottom:1.5rem}
+        .btn {display:inline-block;padding:0.7rem 1.5rem;background:#9f12aa;color:#9b9a9a;text-decoration:none;border-radius:5px;font-weight:bold}
+        .pc, .services, .tournaments, .visit {padding:2rem}
+        .pc h2, .services h2, .tournaments h2, .visit h2 {margin-bottom:1.5rem}
+        .pc-grid, .services-grid, .tournaments-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem}
+        .pc-card, .service-card, .tournament-card {background:#222;border-radius:8px;overflow:hidden}
+        .pc-card img, .service-card img, .tournament-card img {width:100%;height:auto;display:block}
+        .pc-card h3, .service-card h3, .tournament-card h3 {margin:0.75rem 1rem 0.5rem}
+        .pc-card p, .service-card p {margin:0 1rem 0.75rem;color:#ccc}
+        .contact-form {max-width:400px;margin:0 auto;display:grid;gap:1rem}
+        .contact-form input, select {border:none;border-radius:5px;padding:0.75rem;background:#333;color:#fff}
+        .contact-form button {width:100%;padding:0.75rem;background:#b60472;color:#fff;border:none;border-radius:5px;font-weight:bold}
+        .footer {text-align:center;padding:1rem 2rem;background:#222;color:#888
+        @media (max-width: 768px) {
+            .menu-item,
+            .menu-item.reverse {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+            .menu-text,
+            .menu-img {
+                max-width: 100%;
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -41,21 +54,21 @@
         <h2>Заглядывай к нам</h2>
         <p>«Добро пожаловать! У нас — ароматный чай, вкусный плов и добрая атмосфера. Заходите — будем рады!»</p>
         <p>Чайхона — уютное заведение с атмосферой Востока, где подают ароматный чай, плов, шашлык и другие блюда среднеазиатской кухни. Отличное место для дружеских встреч!</p>
-        <a href="#contacts" class="btn">Свзязь с нами</a>
+        <a href="#contacts" class="btn">Связь с нами</a>
     </section>
     <section id="hero">
         <h1>Добро пожаловать в Чайхану «Чайная радость»!</h1>
-        <p>Свежежие листья чая, спокойная и дружелюбная атмосфера.</p>
+        <p>Свежезаваренный чай, спокойная и дружелюбная атмосфера.</p>
     </section>
 
     <section id="about">
         <h2>О Чайхоне </h2>
         <p>Чайхана — это не просто заведение, где подают чай, а особый культурный уголок, пропитанный восточным колоритом и гостеприимством. Здесь время будто замедляет ход: под мягкий аромат свежезаваренного чая можно насладиться традиционными блюдами — пловом, шашлыками, лепёшками и сладостями.
 
+
 Уютная атмосфера, низкие столики, мягкие подушки и ненавязчивая восточная музыка создают особое настроение. Чайхана издавна служила местом встреч: здесь вели беседы, заключали сделки, делились новостями и укрепляли дружеские связи.
 
 Сегодня чайхана сохраняет эти традиции, предлагая гостям возможность отдохнуть душой, погрузиться в атмосферу Востока и по-настоящему расслабиться за чашкой ароматного чая.
-
 </p>
         <img src="https://yaart-web-alice-images.s3.yandex.net/editing_result_e3b3a4c439ab11f188c03e58e9dfdf7d:1" height="550" width="500" alt="Чайхона">
     </section>
