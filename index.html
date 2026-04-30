@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Чайхоная (чайная радость)</title>
+    <title>Чайхона «Чайная радость»</title>
     <style>
         * {margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
         body {background:#D2B48C;color:#333;line-height:1.6}
+
         .header {display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem;background:#7CFC00}
         .header h1 {font-size:1.8rem}
         .header nav a {margin-left:1.5rem;color:#000;text-decoration:none;font-weight:bold}
@@ -25,8 +26,6 @@
         .contact-form input, select {border:none;border-radius:5px;padding:0.75rem;background:#333;color:#fff}
         .contact-form button {width:100%;padding:0.75rem;background:#b60472;color:#fff;border:none;border-radius:5px;font-weight:bold}
         .footer {text-align:center;padding:1rem 2rem;background:#222;color:#888}
-
-        /* Новые стили для центрирования */
         .centered-section {
             text-align: center;
             display: flex;
@@ -45,17 +44,92 @@
             height: auto;
         }
 
+        /* Адаптация для мобильных устройств */
         @media (max-width: 768px) {
-            .menu-item,
-            .menu-item.reverse {
+            .header {
                 flex-direction: column;
-                text-align: center;
                 gap: 1rem;
+                text-align: center;
+                padding: 1rem;
             }
-            .menu-text,
-            .menu-img {
+            .header nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 0.5rem;
+            }
+            .header nav a {
+                margin-left: 0;
+                font-size: 0.9rem;
+            }
+            .hero {
+                padding: 2rem 1rem;
+            }
+            .hero h2 {
+                font-size: 1.8rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .centered-section > div {
+                padding: 1rem;
+                max-width: 95%;
+            }
+            .menu-items {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+            }
+            .item {
                 max-width: 100%;
+                padding: 1rem;
+                background: #fff;
+                border-radius: 8px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            }
+            .item img {
                 width: 100%;
+                height: auto;
+                border-radius: 4px;
+            }
+            .reviews {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                padding: 0 1rem;
+            }
+            .review {
+                background: #fff;
+                padding: 1.5rem;
+                border-radius: 8px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            }
+            #contacts address {
+                padding: 1rem;
+                text-align: center;
+            }
+            .contact-form {
+                padding: 1rem;
+                max-width: 90%;
+            }
+            .footer {
+                padding: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.4rem;
+            }
+            .hero h2 {
+                font-size: 1.5rem;
+            }
+            .item h3 {
+                font-size: 1.2rem;
+            }
+            .btn {
+                padding: 0.6rem 1rem;
+                font-size: 0.9rem;
             }
         }
     </style>
@@ -73,7 +147,7 @@
 
     <section id="hero" class="hero">
         <h2>Заглядывай к нам</h2>
-        <p>«Добро пожаловать! У нас — ароматный чай, вкусный плов и добрая атмосфера. Заходите — будем рады!»</p>
+        <p>«Добро пожаловать! У нас — ароматный чай, вкусный плов и добрая атмосфера. Заходите
         <p>Чайхона — уютное заведение с атмосферой Востока, где подают ароматный чай, плов, шашлык и другие блюда среднеазиатской кухни. Отличное место для дружеских встреч!</p>
         <a href="#contacts" class="btn">Связь с нами</a>
     </section>
@@ -96,6 +170,7 @@
                     <h3>Ассорти чаев для большей компании (до 8 человек)</h3>
                     <img src="https://yaart-web-alice-images.s3.yandex.net/2bc05b8739a811f1b111b671dcfb3bd8:3" alt="Ассорти чаев">
                     <p>Крепкие и насыщенные напитки — идеальный выбор для большой компании: они задают настроение, но при этом остаются спокойными и сбалансированными, позволяя наслаждаться общением без лишней суеты.</
+        <h2>Меню</h2>
         <h2>------------------</h2>
         <div class="menu-items">
             <div class="item">
@@ -205,3 +280,4 @@
 </main>
 </body>
 </html>
+  
