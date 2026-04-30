@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -24,7 +24,27 @@
         .contact-form {max-width:400px;margin:0 auto;display:grid;gap:1rem}
         .contact-form input, select {border:none;border-radius:5px;padding:0.75rem;background:#333;color:#fff}
         .contact-form button {width:100%;padding:0.75rem;background:#b60472;color:#fff;border:none;border-radius:5px;font-weight:bold}
-        .footer {text-align:center;padding:1rem 2rem;background:#222;color:#888
+        .footer {text-align:center;padding:1rem 2rem;background:#222;color:#888}
+
+        /* Новые стили для центрирования */
+        .centered-section {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .item {
+            max-width: 500px;
+            margin: 0 auto 2rem auto;
+        }
+        .item img {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            height: auto;
+        }
+
         @media (max-width: 768px) {
             .menu-item,
             .menu-item.reverse {
@@ -41,7 +61,7 @@
     </style>
 </head>
 <body>
-  <header class="header">
+    <header class="header">
         <h1>Чайхона «Чайная радость»</h1>
         <nav>
             <a href="#menu">Чайное меню</a>
@@ -50,30 +70,32 @@
             <a href="#visit">Забронировать столик</a>
         </nav>
     </header>
- <section id="hero" class="hero">
+
+    <section id="hero" class="hero">
         <h2>Заглядывай к нам</h2>
         <p>«Добро пожаловать! У нас — ароматный чай, вкусный плов и добрая атмосфера. Заходите — будем рады!»</p>
         <p>Чайхона — уютное заведение с атмосферой Востока, где подают ароматный чай, плов, шашлык и другие блюда среднеазиатской кухни. Отличное место для дружеских встреч!</p>
         <a href="#contacts" class="btn">Связь с нами</a>
     </section>
-    <section id="hero">
-        <h1>Добро пожаловать в Чайхану «Чайная радость»!</h1>
-        <p>Свежезаваренный чай, спокойная и дружелюбная атмосфера.</p>
+
+    <section id="about" class="centered-section">
+        <div style="max-width: 800px; padding: 2rem;">
+            <h2>О Чайхоне</h2>
+            <p>Чайхана — это не просто заведение, где подают чай, а особый культурный уголок, пропитанный восточным колоритом и гостеприимством. Здесь время будто замедляет ход: под мягкий аромат свежезаваренного чая можно насладиться традиционными блюдами — пловом, шашлыками, лепёшками и сладостями.</p>
+            <p>Уютная атмосфера, низкие столики, мягкие подушки и ненавязчивая восточная музыка создают особое настроение. Чайхана издавна служила местом встреч: здесь вели беседы, заключали сделки, делились новостями и укрепляли дружеские связи.</p>
+            <p>Сегодня чайхана сохраняет эти традиции, предлагая гостям возможность отдохнуть душой, погрузиться в атмосферу Востока и по-настоящему расслабиться за чашкой ароматного чая.</p>
+            <img src="https://yaart-web-alice-images.s3.yandex.net/editing_result_e3b3a4c439ab11f188c03e58e9dfdf7d:1" height="550" width="500" alt="Чайхона">
+        </div>
     </section>
 
-    <section id="about">
-        <h2>О Чайхоне </h2>
-        <p>Чайхана — это не просто заведение, где подают чай, а особый культурный уголок, пропитанный восточным колоритом и гостеприимством. Здесь время будто замедляет ход: под мягкий аромат свежезаваренного чая можно насладиться традиционными блюдами — пловом, шашлыками, лепёшками и сладостями.
-
-
-Уютная атмосфера, низкие столики, мягкие подушки и ненавязчивая восточная музыка создают особое настроение. Чайхана издавна служила местом встреч: здесь вели беседы, заключали сделки, делились новостями и укрепляли дружеские связи.
-
-Сегодня чайхана сохраняет эти традиции, предлагая гостям возможность отдохнуть душой, погрузиться в атмосферу Востока и по-настоящему расслабиться за чашкой ароматного чая.
-</p>
-        <img src="https://yaart-web-alice-images.s3.yandex.net/editing_result_e3b3a4c439ab11f188c03e58e9dfdf7d:1" height="550" width="500" alt="Чайхона">
-    </section>
-    <section id="menu">
-        <h2>Меню</h2>
+    <section id="menu" class="centered-section">
+        <div style="max-width: 800px;">
+            <h2>Меню</h2>
+            <div class="menu-items">
+                <div class="item">
+                    <h3>Ассорти чаев для большей компании (до 8 человек)</h3>
+                    <img src="https://yaart-web-alice-images.s3.yandex.net/2bc05b8739a811f1b111b671dcfb3bd8:3" alt="Ассорти чаев">
+                    <p>Крепкие и насыщенные напитки — идеальный выбор для большой компании: они задают настроение, но при этом остаются спокойными и сбалансированными, позволяя наслаждаться общением без лишней суеты.</
         <h2>------------------</h2>
         <div class="menu-items">
             <div class="item">
